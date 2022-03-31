@@ -181,4 +181,5 @@ optimiser = optim.SGD(network.parameters(), lr=learning_rate, momentum=momentum)
           (batch_idx*64) + ((epoch-1)*len(train_loader.dataset)))
         torch.save(network.state_dict(), '/results/model.pth')
         torch.save(optimizer.state_dict(), '/results/optimizer.pth')
+
   ```
